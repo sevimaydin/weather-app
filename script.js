@@ -7,6 +7,7 @@ wIcon = document.querySelector(".weather-part img")
 arrowBack = document.querySelector("header i")
 let api;
 
+
 inputField.addEventListener("keyup", e => {
     if(e.key == "Enter" && inputField.value != ""){
         requestApi(inputField.value)
@@ -23,7 +24,7 @@ locationBtn.addEventListener("click", ()=>{
 
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=c7bf8fa7c40170e50739b5153f1c940e`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=fba85e8e4ddc74a46bbcde7fa0ea0bca`;
     fetchData()
 }
 
@@ -33,7 +34,7 @@ function onError(error){
 }
 
 function requestApi(city){
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=c7bf8fa7c40170e50739b5153f1c940e`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=fba85e8e4ddc74a46bbcde7fa0ea0bca`;
     fetchData()
 }
 
@@ -53,8 +54,7 @@ function weatherDetails(info){
         const {description, id} = info.weather[0]
         const {feels_like, humidity, temp} = info.main
 
-        if(id==800){
-            wIcon.src = "icons/clear.svg"
+        if(id==800){ wIcon.src = "icons/clear.svg"
         }else if(id => 200 && id <= 232){
             wIcon.src = "icons/storm.svg"
         }else if(id => 600 && id <= 622){
