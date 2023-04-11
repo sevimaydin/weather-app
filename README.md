@@ -1,12 +1,16 @@
-<h1> Hava Durumu App</h1>
+#Hava Durumu Uygulaması
+- Bu proje, JavaScript, HTML5 ve CSS3 teknolojileri kullanılarak geliştirilmiş bir hava durumu uygulamasıdır. Bu uygulama, kullanıcılara güncel hava durumu verilerini sunar ve kullanıcılar konumlarını kullanarak hava durumu bilgilerini alır. Ayrıca, kullanıcıların farklı şehirlerin hava durumunu da arayabileceği bir arama işlevselliği de vardır.
 
-<h2> Kullanılan teknolojiler </h2>
+> Bu uygulama, aşağıdaki teknolojileri kullanır:
 
-<p>HTML ,CSS,JS</P>
+JavaScript
+HTML5
+CSS3
+OpenWeatherMap API
 
+### Kullanım
+- Hava durumu uygulamasını kullanmak oldukça basittir. Uygulama açıldığında, kullanıcının konumunu kullanarak hava durumunu gösterir. Ayrıca, kullanıcılar arama çubuğunu kullanarak farklı şehirlerin hava durumunu arayabilirler.
+#### Önizleme 
+- Uygulamayı kullanmak için [weather app](https://netweather.netlify.app/)  adresini ziyaret edebilirsiniz .
 
-
-<h2> Ekran Görüntüsü </h2>
-
-![](weather.gif)
-
+  - ![app](weather.gif)
